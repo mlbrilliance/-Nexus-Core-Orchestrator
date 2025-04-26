@@ -2,7 +2,7 @@
 
 **Project Synapse** represents an advanced set of custom modes for Roo Code, designed to facilitate a highly structured, agentic software development workflow within Visual Studio Code. It synergizes concepts from the methodical SPARC approach and the ontology-driven, micro-tasking rigor of SAPPO, tailored for building high-quality, secure, modular, and cost-efficient software.
 
-This mode set is particularly focused on leveraging Roo Code's capabilities for hand-off coding workflows, emphasizing Test-Driven Development (TDD), proactive security measures, strict modularity, and optimized API usage.
+This mode set is particularly focused on leveraging Roo Code's capabilities for hand-off coding workflows, emphasizing Test-Driven Development (TDD), proactive security measures, strict modularity (<500 lines per unit), and optimized API usage.
 
 ## Philosophy & Goals
 
@@ -13,7 +13,7 @@ Project Synapse is built upon several core principles:
 3.  **Rapid Iteration Cycle (Code -> Targeted Test -> Fix/Refine):** Implementing an immediate, tight feedback loop after initial code generation to catch errors instantly using highly focused tests.
 4.  **Targeted Testing Strategy:** Moving beyond basic unit tests in the initial loop to include context-aware integration checks, ensuring components function correctly in their immediate environment *before* broader integration.
 5.  **SAPPO Integration:** Utilizing the Software Architecture Problem Prediction Ontology (SAPPO) provides a precise vocabulary for defining tasks, requirements, potential problems, and solutions, enhancing clarity and reducing ambiguity.
-6.  **Strict Modularity:** Enforcing a maximum file size (typically < 500 lines) to promote readability, maintainability, and testability.
+6.  **Strict Modularity (<500L):** Enforcing a maximum file size (typically < 500 lines) to promote readability, maintainability, and testability.
 7.  **Security First:** Integrating security checks early in the process and enforcing secure coding practices universally (e.g., no hard-coded secrets).
 8.  **Cost Consciousness:** Optimizing workflow and tool usage (especially research tools like Perplexity MCP) to minimize API token consumption.
 9.  **Strategic Research-Driven Development (RDD):** Empowering modes to use external knowledge sources (like Perplexity) strategically for complex problems, not basic tasks.
@@ -31,7 +31,7 @@ Project Synapse is built upon several core principles:
 
 ## Modes Overview
 
-*(Refer to the `customModes.json` file for full definitions and instructions)*
+*(Refer to the `customModes.json` file provided separately for full definitions and instructions)*
 
 *   **`🌌 Nexus Core Orchestrator`**: Central coordinator; manages micro-tasks, SAPPO framing, and the Rapid Iteration Cycle.
 *   **`🖋️ Chrono Scribe (Specification & Pseudocode)`**: Creates detailed specs/pseudocode with SAPPO terms and TDD anchors.
@@ -68,7 +68,7 @@ Project Synapse is built upon several core principles:
 
 ## Usage
 
-1.  **Copy Configuration:** Obtain the JSON content defining these custom modes.
+1.  **Copy Configuration:** Obtain the complete JSON content defining these 13 custom modes (provided separately).
 2.  **Add to Roo Code:** Paste the JSON configuration into your Roo Code custom modes settings file (often accessible via VS Code settings or a specific configuration file used by the Roo Code extension).
 3.  **Reload:** Reload VS Code or the Roo Code extension if required for the changes to take effect.
 4.  **Interact:** Start your workflow by interacting with the `🌌 Nexus Core Orchestrator` (to execute a plan) or the `❓ Oracle Guide` (for help formulating a plan). Use `@ModeName` syntax to switch modes or specify delegates in your prompts to the orchestrator.
@@ -79,7 +79,7 @@ Project Synapse is built upon several core principles:
 *   **Use SAPPO Framing:** Incorporate SAPPO terms where possible to improve clarity.
 *   **Expect the Rapid Iteration Cycle:** Understand that code will be tested *immediately* and may require quick fix cycles.
 *   **Provide Context for Testing:** When defining tasks, give `Nexus Core` enough context about interactions so it can guide `@QuantumVerifier`'s Contextual Integration tests.
-*   **Adhere to Modularity:** Structure your requests to align with the < 500 line target for outputs.
+*   **Adhere to Modularity (<500L):** Structure your requests to align with the < 500 line target for outputs.
 *   **Never Suggest Hard-coded Secrets:** Rely on proper configuration management.
 *   **Use `attempt_completion`:** Understand this signal is crucial for the modes to hand control back to the orchestrator.
 
