@@ -52,7 +52,7 @@
     *   **Tool:** Perplexity MCP.
     *   **Condition:** USE strategically for complex/unknowns (per mode Tiered rules: MUST/SHOULD/MAY/DO NOT).
     *   **Constraint:** ¬Use for basic tasks. Prioritize cost-efficiency.
-    *   **Reporting:** Summarize usage/findings briefly in 📤 Report (Item 5).
+    *   **Reporting:** Summarize usage/findings briefly in 📤 Report (Item 4).
 
 8.  **Context Dependency (*):**
     *   **Input:** RELY solely on provided `μT` context (`ctx`: description, artifacts).
